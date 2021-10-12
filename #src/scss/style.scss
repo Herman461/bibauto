@@ -1,0 +1,57 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+	@font-face {
+		font-family: $font_name;
+		font-display: swap;
+		src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+		font-weight: #{$weight};
+		font-style: #{$style};
+	}
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,regular,500,700");
+
+$minWidth: 320px;
+$maxWidth: 1920px;
+$maxWidthContainer: 1140;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98;
+
+$blackColor: #3F3F3F;
+$redColor: #DC1922;
+
+@import "fonts.scss";
+@import "icons.scss";
+@import "reset.scss";
+@import "ui.scss";
+@import "ibg.scss";
+@import "header.scss";
+
+body {
+	color: #000;
+	font-size: 14px;
+	font-family: "Roboto";
+	font-weight: 400;
+	&._lock {
+		overflow: hidden;
+	}
+}
+
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+._container {
+	max-width: $maxWidthContainer + px;
+	margin: 0 auto;
+	padding: 0px 20px;
+}
+
+.page {
+	flex: 1 1 auto;
+	// padding: 0px 0px 0px 0px;
+}

@@ -1,0 +1,48 @@
+// .btn {
+// 	display: inline-flex;
+// 	align-items: center;
+// 	justify-content: center;
+// 	min-height: 39px;
+// 	background-color: #f68038;
+// 	font-size: 12px;
+// 	line-height: 18px;
+// 	font-weight: 900;
+// 	text-transform: uppercase;
+// 	color: #fff;
+// 	padding: 0px 21px;
+// 	transition: all 0.3s ease 0s;
+// 	@media (min-width: $md2+px) {
+// 		&:hover {
+// 		}
+// 	}
+// }
+
+// .rub:after {
+// 	content: "\20BD";
+// }
+// %graystyle {
+// 	transition: all 0.3s ease 0s;
+// 	filter: grayscale(1);
+// 	-webkit-filter: grayscale(1);
+// 	-moz-filter: grayscale(1);
+// 	-o-filter: grayscale(1);
+// }
+// %graystyleoff {
+// 	filter: grayscale(0);
+// 	-webkit-filter: grayscale(0);
+// 	-moz-filter: grayscale(0);
+// 	-o-filter: grayscale(0);
+// }
+
+
+//! шахматная доска при помощи border
+//! оболочка
+// ul {
+// 	border-top: 1px solid #444;
+// 	border-left: 1px solid #444;
+// }
+//! дети
+// li {
+// 	border-right: 1px solid #444;
+// 	border-bottom: 1px solid #444;
+// }
