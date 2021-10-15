@@ -1,21 +1,33 @@
-// .btn {
-// 	display: inline-flex;
-// 	align-items: center;
-// 	justify-content: center;
-// 	min-height: 39px;
-// 	background-color: #f68038;
-// 	font-size: 12px;
-// 	line-height: 18px;
-// 	font-weight: 900;
-// 	text-transform: uppercase;
-// 	color: #fff;
-// 	padding: 0px 21px;
-// 	transition: all 0.3s ease 0s;
-// 	@media (min-width: $md2+px) {
-// 		&:hover {
-// 		}
-// 	}
-// }
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 48px;
+	background-color: $redColor;
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 900;
+	color: #fff;
+	padding: 2px 0px;
+	transition: all 0.3s ease 0s;
+	@include adaptiv-value("font-size", 18, 16, 1);
+	@include adaptiv-value("padding-left", 28, 20, 1);
+	@include adaptiv-value("padding-right", 28, 20, 1);
+	@media (any-hover: hover) {
+		&:hover {
+			
+		}
+	}
+}
+._title {
+	@include adaptiv-value("font-size", 30, 24, 1);
+	line-height: 36 / 30 * 100%;
+	font-weight: 300;
+	text-transform: uppercase;
+	span {
+		font-weight: 400;
+	}
+}
 
 // .rub:after {
 // 	content: "\20BD";
