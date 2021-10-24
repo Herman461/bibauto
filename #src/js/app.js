@@ -1,6 +1,7 @@
 "use strict";
 @@include('files/slideToggle.js', {})
 @@include('files/script.js', {})
+@@include('files/mask.js', {})
 @@include('files/sliders.js', {})
 @@include('files/ibg.js', {})
 @@include('files/functions.js', {})

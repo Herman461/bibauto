@@ -5,8 +5,6 @@
 	min-height: 48px;
 	background-color: $redColor;
 	font-size: 18px;
-	line-height: 18px;
-	font-weight: 900;
 	color: #fff;
 	padding: 2px 0px;
 	transition: all 0.3s ease 0s;
@@ -28,6 +26,93 @@
 		font-weight: 400;
 	}
 }
+
+.order-btn {
+	// padding: 0px 16px;
+	// display: inline-flex;
+	// align-items: center;
+	// min-height: 48px;
+	// color: #3F3F3F;
+	// border: 1px solid #000;
+	
+	min-height: 48px;
+	padding: 0px 16px;
+	border: 1px solid #000;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	color: $blackColor;
+	transition: all 0.3s ease 0s;
+	@media (any-hover: hover) {
+		&:hover {
+			border-color: transparent;
+			background-color: $redColor;
+			color: #fff;
+		}
+	}
+}
+
+.form {
+	&__title {
+		@include adaptiv-value("font-size", 20, 18, 1);
+		line-height: 24 / 20 * 100%;
+		letter-spacing: 0.02em;
+		margin: 0px 0px 20px 0px;
+		color: #3F3F3F;
+		@media (max-width: $md3+px) {
+			text-align: center;
+		}
+	}
+
+	&__text {
+		@include adaptiv-value("font-size", 16, 14, 1);
+		line-height: 20 / 16 * 100%;
+		margin: 0px 0px 34px 0px;
+		@media (max-width: $md3+px) {
+			text-align: center;
+		}
+	}
+
+	&__input {
+		margin: 0px 0px 8px 0px;
+	}
+	&__textarea {
+		margin: 0px 0px 36px 0px;
+	}
+
+	&__bottom {
+		// @media (min-width: $md2+px) {
+		// 	display: flex;
+		// 	align-items: flex-start;
+		// }
+	}
+
+	&__btn {	
+		width: 100%;
+		// @media (min-width: $md2+px) {
+		// 	flex: 0 0 250px;
+		// }
+		// @media (max-width: $md2+px) {
+		// 	width: 100%;
+		// 	margin: 0px 0px 16px 0px;
+		// }
+	}
+
+	&__agreement {
+		line-height: 18 / 12 * 100%;
+		font-size: 12px;
+		
+		a {
+			color: #3F3F3F;
+			text-decoration: underline;
+		}
+		// @media (min-width: $md2+px) {
+		// 	padding: 0px 0px 0px 30px;
+		// 	flex: 1 1 auto;
+		// }
+	}
+}
+
 
 // .rub:after {
 // 	content: "\20BD";

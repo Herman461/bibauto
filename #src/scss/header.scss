@@ -230,21 +230,6 @@
    }
 
    &__btn {
-      min-height: 48px;
-      padding: 0px 16px;
-      border: 1px solid #000;
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      color: $blackColor;
-      transition: all 0.3s ease 0s;
-      @media (min-width: $md2+px) {
-         &:hover {
-            border-color: transparent;
-            background-color: $redColor;
-            color: #fff;
-         }
-      }
       @media (max-width: $md2+px) {
          padding: 0px 28px;
          min-height: 40px;
